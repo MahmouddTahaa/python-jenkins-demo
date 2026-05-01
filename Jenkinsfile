@@ -3,12 +3,6 @@ pipeline {
 
     stages {
 
-        stage('Checkout') {
-            steps {
-                git 'https://github.com/MahmouddTahaa/python-jenkins-demo'
-            }
-        }
-
         stage('Test') {
             steps {
                 sh 'pip install pytest'
